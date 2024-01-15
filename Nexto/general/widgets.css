@@ -196,7 +196,7 @@ tabbox tab:checked,
 notebook tab:checked,
 .nautilus-window .titlebar .path-bar-box {
   border-color: @gtk_highlight black black @gtk_highlight;
-  box-shadow: inset 0 -1px @gtk_transparent_borders, inset -1px 0 @gtk_transparent_borders;
+  box-shadow: inset -1px -1px @gtk_transparent_borders;
 }
 
 spinbutton:not(.vertical),
@@ -209,7 +209,7 @@ treeview.view.content-view.check:not(list),
 iconview.content-view.check:not(list),
 .content-view:not(list) check {
   border-color: @gtk_transparent_borders @gtk_highlight @gtk_highlight @gtk_transparent_borders;
-  box-shadow: inset 0 1px black, inset 1px 0 black, inset 0 -1px @gtk_transparent_borders, inset -1px 0 @gtk_transparent_borders;
+  box-shadow: inset 1px 1px black, inset -1px -1px @gtk_transparent_borders;
 }
 
 button:checked,
@@ -1690,7 +1690,7 @@ headerbar,
   background-color: @gtk_titlebar_bg_color;
   background-image: none;
   border-bottom: 1px solid @gtk_transparent_borders;
-  box-shadow: inset 0 1px @gtk_highlight, inset 1px 0 @gtk_highlight, inset 0 -1px @gtk_transparent_borders, inset -1px 0 @gtk_transparent_borders;
+  box-shadow: inset 1px 1px @gtk_highlight, inset -1px -1px @gtk_transparent_borders;
 }
 
 headerbar:backdrop,
