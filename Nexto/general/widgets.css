@@ -61,14 +61,14 @@ headerbar .subtitle,
 }
 
 .view,
-list,
-notebook > stack:not(:only-child),
+/* list, */
+/* notebook > stack:not(:only-child), */
 .nautilus-window,
-textview text,
-.dynamic-notebook,
-spinbutton:not(.vertical),
-spinbutton.vertical,
-entry,
+/* textview text, */
+/* .dynamic-notebook, */
+/* spinbutton:not(.vertical), */
+/* spinbutton.vertical, */
+/* entry, */
 check,
 radio,
 treeview.view check:selected,
@@ -76,6 +76,12 @@ treeview.view radio:selected,
 dialog filechooser .sidebar .frame,
 popover scrolledwindow.frame viewport.frame list {
   background-color: @gtk_base_color;
+}
+
+textview text,
+spinbutton,
+entry {
+  background-color: @gtk_entry_color;
 }
 
 /* sidebars color background */
@@ -191,12 +197,17 @@ switch slider,
 scale:hover slider,
 scale.marks-after slider,
 scale.marks-before slider,
-menu,
+/* menu, */
 tabbox tab:checked,
 notebook tab:checked,
 .nautilus-window .titlebar .path-bar-box {
   border-color: @gtk_highlight black black @gtk_highlight;
   box-shadow: inset -1px -1px @gtk_transparent_borders;
+}
+
+menu {
+  border-color: @gtk_borders black black @gtk_borders;
+  box-shadow: inset 1px 1px @gtk_highlight, inset -1px -1px @gtk_transparent_borders;
 }
 
 spinbutton:not(.vertical),
@@ -2058,7 +2069,7 @@ dialog actionbar {
 
 .inline-toolbar {
   padding: 4px;
-  background-color: @gtk_sidebar_color;
+  /* background-color: @gtk_sidebar_color; */
   border-width: 0 1px 1px;
 }
 
