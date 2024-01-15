@@ -177,7 +177,7 @@ StButton.popup-menu-item {
 
 #panel,
 .sound-player-overlay {
-  background-color: rgba(160, 160, 160, 0.8);
+  background-color: rgba(170, 170, 170, 0.8);
 }
 
 .panel-bottom {
@@ -219,7 +219,7 @@ StButton,
 .osd-window,
 .window-list-preview,
 .grouped-window-list-badge {
-  background-color: #a0a0a0;
+  background-color: #aaa;
 }
 
 .menu-selected-app-box {
@@ -277,7 +277,7 @@ StScrollBar StButton:checked {
 
 .window-list-item-box,
 .grouped-window-list-item-box:active {
-  background-color: rgba(0, 0 /**/, 0, 0.01);
+  background-color: rgba(0, 0, 0, 0.01);
 }
 
 .panel-bottom .window-list-item-box:focus,
@@ -330,7 +330,7 @@ StEntry,
 .osd-window,
 #notification .notification-button,
 .window-list-preview {
-  box-shadow: 0 0 0 1px rgba(0, 0 /**/, 0, 0.2);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
 }
 
 .osd-window .level,

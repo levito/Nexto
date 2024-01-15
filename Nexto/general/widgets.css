@@ -1199,11 +1199,11 @@ button:visited:checked {
 button:link > label,
 button:link,
 *:link {
-  color: @gtk_selected_bg_color;
+  color: @gtk_link_color;
 }
 button:visited > label,
 button:visited {
-  color: mix(@gtk_selected_bg_color, @error_color, 0.5);
+  color: @gtk_visited_color;
 }
 
 button:link > label:disabled,
@@ -1211,7 +1211,7 @@ button:visited > label:disabled,
 button:disabled:link,
 button:disabled:visited,
 *:link:disabled {
-  color: alpha(@gtk_selected_bg_color, 0.5);
+  color: alpha(@gtk_link_color, 0.5);
 }
 
 button.circular,

@@ -9,6 +9,9 @@
 @define-color gtk_base_color #c0c0c0;
 @define-color gtk_entry_color @gtk_base_color;
 
+@define-color gtk_link_color @BLUEBERRY_900;
+@define-color gtk_visited_color @GRAPE_900;
+
 @define-color gtk_button_color @gtk_bg_color;
 @define-color gtk_alt_button_color transparent;
 @define-color gtk_widget_color alpha(currentcolor,0.1);

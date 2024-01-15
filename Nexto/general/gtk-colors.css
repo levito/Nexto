@@ -44,7 +44,7 @@
 @define-color theme_unfocused_selected_bg_color @gtk_selected_bg_color;
 @define-color theme_unfocused_selected_fg_color @gtk_selected_fg_color;
 
-@define-color placeholder_text_color #aaa;
+@define-color placeholder_text_color alpha(@gtk_fg_color,0.5);
 @define-color link_color @gtk_selected_bg_color;
 
 @define-color budgie_tasklist_indicator_color @panel_fg;
@@ -64,7 +64,7 @@
 @define-color D_title_unfocused mix(@gtk_fg_color,@gtk_bg_color,0.5);
 
 @define-color m_button_hover alpha(@gtk_titlebar_fg_color,0.1);
-@define-color m_button_active	alpha(@gtk_titlebar_fg_color,0.2);
+@define-color m_button_active alpha(@gtk_titlebar_fg_color,0.2);
 
 @define-color tab_base_color @gtk_base_color;
 @define-color colorAccent @gtk_selected_bg_color;
