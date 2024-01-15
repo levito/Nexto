@@ -703,10 +703,10 @@ button:checked,
 button.flat:checked,
 viewswitcher button:checked,
 spinbutton:not(.vertical) button:checked,
-/*notebook tab:checked,*/
+notebook tab:checked,
 .budgie-panel button.launcher.flat:checked,
 tabbox tab button:checked,
-/*tabbox tab:checked,*/
+tabbox tab:checked,
 notebook > header > tabs > arrow:checked,
 .dynamic-notebook.inline-toolbar button.flat:checked,
 treeview.view button:checked,
@@ -719,7 +719,8 @@ calendar header button:checked,
 actionbar.flat button:checked,
 headerbar.toolbar .linked button:not(.suggested-action):not(.destructive-action):checked,
 headerbar.toolbar button:not(.suggested-action):not(.destructive-action).text-button:checked {
-  background-image: image(alpha(black, 0.15));
+  border-color: black @gtk_highlight @gtk_highlight black;
+  background-image: image(alpha(black, 0.2));
   box-shadow: none;
 }
 
@@ -2742,7 +2743,7 @@ progressbar progress,
 scale highlight,
 levelbar block,
 scrollbar {
-  transition: 0.5s;
+  transition: 0.1s ease-out;
 }
 
 menuitem check,
@@ -2765,14 +2766,14 @@ menu menuitem check:indeterminate:not(:backdrop) {
 
 /* Entry and Button */
 
-button,
+/* button,
 spinbutton:not(.vertical),
 entry,
 scrollbar slider,
 notebook tab,
 tabbox tab {
   transition: 0.3s ease;
-}
+} */
 
 /* Loading Progressbar */
 
@@ -3587,9 +3588,26 @@ XfdesktopIconView.view .label:active {
   background: @gtk_selected_bg_color;
 }
 
-.thunar toolbar {
+/* .thunar toolbar {
   border-bottom: 1px solid @gtk_borders;
   border-top: 1px solid @gtk_borders;
+} */
+.thunar .image-button image {
+  -gtk-icon-transform: scale(0.7);
+}
+.thunar .path-bar-button {
+  margin-left: 1px;
+  border-color: transparent;
+  box-shadow: none;
+}
+.thunar .path-bar-button:active,
+.thunar .path-bar-button:checked {
+  border-color: black @gtk_highlight @gtk_highlight black;
+  box-shadow: 1px 0 @gtk_highlight;
+}
+.thunar .path-bar-button .horizontal image:not(:last-child) {
+  margin-left: 6px;
+  margin-right: -6px;
 }
 
 /********

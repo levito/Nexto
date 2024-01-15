@@ -1,4 +1,4 @@
-gtk_color_scheme = "fg_color:#000\nbg_color:#a0a0a0\nbase_color:#fff\ntext_color:#000\nselected_bg_color:#555577\nselected_fg_color:#fff\ntooltip_bg_color:#a0a0a0\ntooltip_fg_color:#000\nborder_color:#afafaf"
+gtk_color_scheme = "fg_color:#000\nbg_color:#aaa\nbase_color:#c0c0c0\ntext_color:#000\nselected_bg_color:#ddd\nselected_fg_color:#000\ntooltip_bg_color:#000\ntooltip_fg_color:#fff\nborder_color:#777"
 
 
 gtk-icon-sizes = "mini-commander-icon=32,32:print-manager=32,32:panel-button=32,32:gtk-dnd=32,32:gtk-menu=16,16:panel-menu=22,22:gtk-large-toolbar=16,16:gtk-small-toolbar=16,16:gtk-button=16,16:gtk-dialog=32,32"

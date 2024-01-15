@@ -44,7 +44,7 @@
 @define-color theme_unfocused_selected_bg_color @gtk_selected_bg_color;
 @define-color theme_unfocused_selected_fg_color @gtk_selected_fg_color;
 
-@define-color placeholder_text_color #A8A8A8;
+@define-color placeholder_text_color #aaa;
 @define-color link_color @gtk_selected_bg_color;
 
 @define-color budgie_tasklist_indicator_color @panel_fg;
